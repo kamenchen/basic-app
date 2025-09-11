@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'detail',
     loadChildren: () => import('./detail/detail.module').then( m => m.DetailPageModule)
+  },
+  {
+    path: 'newuser',
+    loadChildren: () => import('./newuser/newuser.module').then( m => m.NewuserPageModule)
   }
 ];
 
